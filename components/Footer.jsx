@@ -7,13 +7,13 @@ const Footer = () => {
       id="Contact"
       className="h-full w-full rounded-none shadow-none bg-[url('/background.png')] bg-cover bg-no-repeat  flex flex-col   py-8 gap-6    "
     >
-      <div className=" flex basis-full justify-evenly  flex-row  ">
+      <div className=" flex basis-full  items-center justify-evenly flex-col lg:flex-row  gap-10">
         <motion.div
           initial={{ x: -700, scale: 0.7, opacity: 0 }}
           animate={{ x: 0 }}
           transition={{ duration: 1.5 }}
           whileInView={{ scale: 1, opacity: 1, x: 0 }}
-          className=" flex items-end   basis-1/4  "
+          className=" flex h-full  items-end justify-center  basis-1/4  "
         >
           <img
             src="/logo-white.png"
@@ -21,7 +21,7 @@ const Footer = () => {
           />
         </motion.div>
         <div className="basis-1/3">
-          <div className=" flex  gap-4 flex-col justify-start">
+          <div className=" flex  gap-4 flex-col items-center lg:items-start justify-start">
             <h1 className="font-satoshi text-lg text-white ">My Socials</h1>
             <div className="flex flex-row gap-8 lg:gap-16 p-5">
               <motion.div
@@ -82,8 +82,12 @@ const Footer = () => {
         className="basis-full"
       >
         <div className="flex justify-center items-center flex-row gap-2">
-          <img className="w-[30px] h-[30px]" src="/code.png" alt="" />
-          <h1 className="text-base text-white font-quicksand">
+          <img
+            className="w-[20px] h-[20px] lg:w-[30px] lg:h-[30px]"
+            src="/code.png"
+            alt=""
+          />
+          <h1 className="text-sm lg:text-base text-white font-quicksand">
             Helena Siena - Todos os direitos reservados - 2023
           </h1>
         </div>

@@ -19,7 +19,7 @@ const Portfolios = () => {
           className="font-satoshi font-semibold text-4xl text-task_primary whitespace-normal break-words mt-6 "
         />
         <hr class="w-full h-1 mx-auto  bg-dash_line border-0 rounded  text-left"></hr>
-      </motion.div>{" "}
+      </motion.div>
       <motion.div
         initial={{ x: -700, scale: 0.7, opacity: 0 }}
         animate={{ x: 0 }}

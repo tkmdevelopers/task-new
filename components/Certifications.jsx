@@ -57,28 +57,19 @@ const Certifications = () => {
           animate={{ x: 0 }}
           transition={{ duration: 0.8 }}
           whileInView={{ scale: 1, opacity: 1, x: 0 }}
-          className="flex gap-1 flex-col p-3"
+          className="flex gap-1 items-center flex-col p-3"
         >
-          <button className="bg-button_bg max-w-[250px] h-[60px]  lg:max-w-[450px] w-full lg:h-[80px] rounded-xl">
+          <motion.button className="bg-button_bg max-w-[250px] h-[60px]  lg:max-w-[450px] w-full lg:h-[80px] rounded-xl">
             <AnimatedTextCharacter
               text={"Click to learn more..."}
               className={
                 "font-satoshi font-bold   text-black text-base lg:text-lg"
               }
             />
-          </button>
-          <AnimatedTextCharacter
-            text={`para acompanhar meu`}
-            className={
-              "font-quicksand font-normal   text-white text-base lg:text-lg"
-            }
-          />
-          <AnimatedTextCharacter
-            text={`desenvolvimento e minhas conquistas!`}
-            className={
-              "font-quicksand font-normal   text-white text-base lg:text-lg"
-            }
-          />
+          </motion.button>
+          <h1 className="font-quicksand font-normal text-center   text-white text-base lg:text-lg">
+            para acompanhar meu desenvolvimento e minhas conquistas!
+          </h1>
         </motion.div>
       </div>
     </div>
