@@ -6,10 +6,6 @@ import { Quicksand } from "next/font/google";
 import localFont from "next/font/local";
 
 import { FaArrowUp } from "react-icons/fa";
-export const metadata = {
-  title: "Portfolio",
-  description: "Timar Private Enterprise",
-};
 
 const satoshi = localFont({
   src: [
